@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Mplify</string>
+    <string name="player">Player</string>
+    <string name="queue">Queue</string>
+    <string name="all_songs">All songs</string>
 </resources>
