@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_player"
+        android:icon="@drawable/ic_player"
+        android:title="@string/player"
+        />
+
+    <item android:id="@+id/action_music_queue"
+        android:icon="@drawable/ic_music_queue"
+        android:title="@string/queue"
+        />
+
+    <item android:id="@+id/action_music_list"
+        android:icon="@drawable/ic_music_list"
+        android:title="@string/all_songs"
+        />
+
+</menu>
