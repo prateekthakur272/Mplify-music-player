@@ -2,7 +2,7 @@
 <resources>
     <!--    light theme colors-->
     <color name="heliotrope">#D593FF</color>
-    <color name="argentinian_blue">#88BFF8</color>
+    <color name="argentinian_blue">#79B7F6</color>
     <color name="peach_yellow">#F7E0AB</color>
     <!--    dark theme colors-->
     <color name="lavender">#BD82E2</color>
