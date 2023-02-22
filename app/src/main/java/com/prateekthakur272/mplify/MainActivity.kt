@@ -2,12 +2,8 @@ package com.prateekthakur272.mplify
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Toast
 import androidx.fragment.app.commit
 import com.prateekthakur272.mplify.databinding.ActivityMainBinding
-import com.prateekthakur272.mplify.databinding.FragmentPlayerBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = getString(R.string.player)
         supportFragmentManager.commit {
             replace(R.id.fragment_container,PlayerFragment())
         }
@@ -28,18 +25,21 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.commit {
                         replace(R.id.fragment_container,PlayerFragment())
                     }
+                    supportActionBar?.title = getString(R.string.player)
                     return@setOnItemSelectedListener true
                 }
                 R.id.action_music_queue -> {
                     supportFragmentManager.commit {
                         replace(R.id.fragment_container,QueueFragment())
                     }
+                    supportActionBar?.title = getString(R.string.queue)
                     return@setOnItemSelectedListener true
                 }
                 R.id.action_music_list -> {
                     supportFragmentManager.commit {
                         replace(R.id.fragment_container,AllSongsFragment())
                     }
+                    supportActionBar?.title = getString(R.string.all_songs)
                     return@setOnItemSelectedListener true
                 }
                 else -> {
