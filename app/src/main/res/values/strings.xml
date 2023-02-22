@@ -3,4 +3,7 @@
     <string name="player">Player</string>
     <string name="queue">Queue</string>
     <string name="all_songs">All songs</string>
+    <string name="previous_track">Previous track</string>
+    <string name="next_track">Next track</string>
+    <string name="play_pause_button">Play/Pause button</string>
 </resources>

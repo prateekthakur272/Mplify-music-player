@@ -11,7 +11,11 @@ class PlayerFragment : Fragment() {
     private lateinit var binding: FragmentPlayerBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentPlayerBinding.inflate(inflater,container,false)
-
+        with(binding.buttonPausePlay){
+            setOnClickListener {
+                
+            }
+        }
         return binding.root
     }
 }
