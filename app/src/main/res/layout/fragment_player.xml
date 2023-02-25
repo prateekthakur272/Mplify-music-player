@@ -39,21 +39,21 @@
         />
 
     <ImageButton
-        android:id="@+id/button_pause_play"
+        android:id="@+id/button_prev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/circular_button_background"
         android:contentDescription="@string/previous_track"
         android:padding="16dp"
         android:src="@drawable/ic_prev"
-        app:layout_constraintBottom_toBottomOf="@+id/button_prev"
-        app:layout_constraintEnd_toStartOf="@+id/button_prev"
+        app:layout_constraintBottom_toBottomOf="@+id/button_play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/button_play_pause"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_prev" />
+        app:layout_constraintTop_toTopOf="@+id/button_play_pause" />
 
     <ImageButton
-        android:id="@+id/button_prev"
+        android:id="@+id/button_play_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -62,7 +62,7 @@
         android:src="@drawable/ic_play"
         app:layout_constraintEnd_toStartOf="@+id/button_next"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_pause_play"
+        app:layout_constraintStart_toEndOf="@+id/button_prev"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         android:contentDescription="@string/play_pause_button" />
 
@@ -74,10 +74,10 @@
         android:contentDescription="@string/next_track"
         android:padding="16dp"
         android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/button_prev"
+        app:layout_constraintBottom_toBottomOf="@+id/button_play_pause"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_prev"
-        app:layout_constraintTop_toTopOf="@+id/button_prev" />
+        app:layout_constraintStart_toEndOf="@+id/button_play_pause"
+        app:layout_constraintTop_toTopOf="@+id/button_play_pause" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

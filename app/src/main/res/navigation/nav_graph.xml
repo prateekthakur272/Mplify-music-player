@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/action_player">
 
+    <fragment
+        android:id="@+id/action_player"
+        android:name="com.prateekthakur272.mplify.PlayerFragment"
+        android:label="fragment_player"
+        tools:layout="@layout/fragment_player" />
+    <fragment
+        android:id="@+id/action_music_queue"
+        android:name="com.prateekthakur272.mplify.QueueFragment"
+        android:label="fragment_queue"
+        tools:layout="@layout/fragment_queue" />
+    <fragment
+        android:id="@+id/action_music_list"
+        android:name="com.prateekthakur272.mplify.AllSongsFragment"
+        android:label="fragment_all_songs"
+        tools:layout="@layout/fragment_all_songs" />
 </navigation>
